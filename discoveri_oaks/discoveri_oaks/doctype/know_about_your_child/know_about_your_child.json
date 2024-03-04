@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-01 16:09:24.305152",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_9g7z",
+  "amended_from",
+  "student_applicant_form",
+  "column_break_bnjl",
+  "select_enquiry_form",
+  "section_break_pjtl",
+  "text_header_by_html",
+  "your_child_section",
+  "wakes_up_at",
+  "column_break_grat",
+  "goes_to_bed",
+  "time_spent_in_section",
+  "screen_time",
+  "column_break_hibd",
+  "playing_games",
+  "column_break_oipv",
+  "enrichment_actvitity",
+  "are_you_subscribe_section",
+  "english_news_paper",
+  "column_break_okfu",
+  "any_tuition_point",
+  "for_the_parents_section",
+  "eating_dinner_together",
+  "column_break_vjkv",
+  "read_out_children",
+  "please_tick_section",
+  "zoo",
+  "parks",
+  "museum",
+  "garden",
+  "mall",
+  "section_break_gwwr",
+  "school_activities"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9g7z",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Know About Your Child",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "your_child_section",
+   "fieldtype": "Section Break",
+   "label": "Your Child"
+  },
+  {
+   "fieldname": "wakes_up_at",
+   "fieldtype": "Time",
+   "label": "Wakes Up At"
+  },
+  {
+   "fieldname": "column_break_grat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "goes_to_bed",
+   "fieldtype": "Time",
+   "label": "Goes To Bed"
+  },
+  {
+   "fieldname": "time_spent_in_section",
+   "fieldtype": "Section Break",
+   "label": "Time Spent in"
+  },
+  {
+   "fieldname": "screen_time",
+   "fieldtype": "Data",
+   "label": "Screen Time"
+  },
+  {
+   "fieldname": "column_break_hibd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "playing_games",
+   "fieldtype": "Data",
+   "label": "Playing Games"
+  },
+  {
+   "fieldname": "column_break_oipv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enrichment_actvitity",
+   "fieldtype": "Data",
+   "label": "Enrichment Activity"
+  },
+  {
+   "fieldname": "are_you_subscribe_section",
+   "fieldtype": "Section Break",
+   "label": "Are You Subscribe"
+  },
+  {
+   "default": "0",
+   "fieldname": "english_news_paper",
+   "fieldtype": "Check",
+   "label": "English News Paper"
+  },
+  {
+   "fieldname": "column_break_okfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "any_tuition_point",
+   "fieldtype": "Check",
+   "label": "Any Tuition Point"
+  },
+  {
+   "fieldname": "for_the_parents_section",
+   "fieldtype": "Section Break",
+   "label": "For the Parents"
+  },
+  {
+   "fieldname": "eating_dinner_together",
+   "fieldtype": "Select",
+   "label": "All family members eating dinner together",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_vjkv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "read_out_children",
+   "fieldtype": "Select",
+   "label": "Read Out to children during bed time",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "section_break_gwwr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "school_activities",
+   "fieldtype": "Check",
+   "label": "Do you engage taking to your child at home about school activities"
+  },
+  {
+   "fieldname": "section_break_pjtl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "please_tick_section",
+   "fieldtype": "Section Break",
+   "label": "Please Tick"
+  },
+  {
+   "default": "0",
+   "fieldname": "zoo",
+   "fieldtype": "Check",
+   "label": "Zoo"
+  },
+  {
+   "default": "0",
+   "fieldname": "parks",
+   "fieldtype": "Check",
+   "label": "Parks"
+  },
+  {
+   "default": "0",
+   "fieldname": "museum",
+   "fieldtype": "Check",
+   "label": "Museum"
+  },
+  {
+   "default": "0",
+   "fieldname": "garden",
+   "fieldtype": "Check",
+   "label": "Garden"
+  },
+  {
+   "default": "0",
+   "fieldname": "mall",
+   "fieldtype": "Check",
+   "label": "Mall"
+  },
+  {
+   "fieldname": "text_header_by_html",
+   "fieldtype": "HTML",
+   "options": "<style>\n    @media screen and (max-width: 600px) {\n        h3 {\n            font-size: 24px;\n        }\n        h4 {\n            font-size: 14px;\n        }\n    }\n\n    @media screen and (min-width: 601px) and (max-width: 1024px) {\n        h3 {\n            font-size: 28px;\n        }\n        h4 {\n            font-size: 16px;\n        }\n    }\n\n    @media screen and (min-width: 1025px) {\n        h3 {\n            font-size: 32px;\n        }\n        h4 {\n            font-size: 18px;\n        }\n    }\n</style>\n\n<h3 style=\"text-align: center;\"> Every Child Matters at Discoveri Oaks Public School </h3>\n<h4>Dear Parent,<br><br>We are in the process of carrying out a survey on different habits of children and your involvement. This helps our teachers for better understanding of your kid.</h4>\n<p>Your co-operation in filling in the table below will be appreciated</p>\n"
+  },
+  {
+   "fieldname": "student_applicant_form",
+   "fieldtype": "Link",
+   "label": "Student Applicant Form",
+   "options": "Student Applicant"
+  },
+  {
+   "fieldname": "column_break_bnjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_enquiry_form",
+   "fieldtype": "Link",
+   "label": "Select Enquiry Form",
+   "options": "Enquiry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-04 12:41:29.460551",
+ "modified_by": "Administrator",
+ "module": "Discoveri Oaks",
+ "name": "Know About Your Child",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

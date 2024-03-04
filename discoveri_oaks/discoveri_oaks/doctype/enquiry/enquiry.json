@@ -1,0 +1,402 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-16 13:41:44.571663",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gz1x",
+  "amended_from",
+  "naming_series",
+  "enquiry_date",
+  "column_break_mfsr",
+  "custom_student_enquiry",
+  "select_grade",
+  "section_break_lqhr",
+  "full_name",
+  "column_break_pgsd",
+  "date_of_birth",
+  "column_break_azgj",
+  "age",
+  "column_break_ksff",
+  "gender",
+  "section_break_brhg",
+  "previous_school_name",
+  "medical_condition",
+  "column_break_mhmo",
+  "board",
+  "medical_details",
+  "father_information",
+  "father_name",
+  "column_break_ahjw",
+  "father_qualification",
+  "primary_mobile_number",
+  "column_break_afaj",
+  "primary_email_id",
+  "father_occupation",
+  "mother_information",
+  "mother_name",
+  "mother_occupation",
+  "column_break_lcbq",
+  "mother_qualification",
+  "mother_mobile_number",
+  "column_break_tomx",
+  "mother_email_id",
+  "section_break_avtq",
+  "income",
+  "address_section",
+  "student_address",
+  "residence_mobile_no",
+  "column_break_qrwy",
+  "pin_code",
+  "email",
+  "section_break_wrvg",
+  "know_about_us",
+  "column_break_nuwg",
+  "improve_child",
+  "section_break_juag",
+  "email_template",
+  "column_break_mcmo",
+  "admission_status",
+  "section_break_fjvf",
+  "rating",
+  "column_break_cpmk",
+  "review"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gz1x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Enquiry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_mfsr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_brhg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mhmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.date_of_birth",
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "mandatory_depends_on": "eval: doc.date_of_birth",
+   "read_only_depends_on": "eval: doc.date_of_birth"
+  },
+  {
+   "fieldname": "column_break_ahjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "father_information",
+   "fieldtype": "Section Break",
+   "label": "Father Information"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "father_occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "column_break_afaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "mother_information",
+   "fieldtype": "Section Break",
+   "label": "Mother Information"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name"
+  },
+  {
+   "fieldname": "mother_occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "column_break_lcbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mother_qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "mother_mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "student_address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "residence_mobile_no",
+   "fieldtype": "Data",
+   "label": "Residence Mobile No."
+  },
+  {
+   "fieldname": "column_break_qrwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "PIN Code"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_wrvg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "know_about_us",
+   "fieldtype": "Select",
+   "label": "How do you come to know about our school",
+   "options": "Select\nGoogle\nTwitter\nNews Paper\nFriends"
+  },
+  {
+   "fieldname": "improve_child",
+   "fieldtype": "Data",
+   "label": "Where do you want your child to improve?"
+  },
+  {
+   "fieldname": "custom_student_enquiry",
+   "fieldtype": "Link",
+   "label": "Student Applicant Form",
+   "options": "Student Applicant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nuwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_juag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email_template",
+   "fieldtype": "Link",
+   "label": "Email template",
+   "options": "Email Template",
+   "read_only_depends_on": "eval:frappe.session.user === 'Guest'"
+  },
+  {
+   "fieldname": "column_break_mcmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "admission_status",
+   "fieldtype": "Data",
+   "label": "Admission Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_lqhr",
+   "fieldtype": "Section Break",
+   "label": "Student Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pgsd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_azgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ksff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "previous_school_name",
+   "fieldtype": "Data",
+   "label": "Previous School Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "medical_condition",
+   "fieldtype": "Check",
+   "label": "Medical Condition"
+  },
+  {
+   "fieldname": "income",
+   "fieldtype": "Select",
+   "label": "Income",
+   "options": "Select\n0 to 5L\n5L to 10L\nAbove 10L"
+  },
+  {
+   "fieldname": "primary_mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile No."
+  },
+  {
+   "fieldname": "mother_email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "section_break_fjvf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state === \"Pending\"",
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": ".DD.-.MM.-.YYYY.-.EF.-.{full_name}.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "select_grade",
+   "fieldtype": "Link",
+   "label": "Select Grade",
+   "options": "Program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tomx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "board",
+   "fieldtype": "Select",
+   "label": "Board",
+   "options": "Select\nCBSE\nICSE\nState Board"
+  },
+  {
+   "default": "Today",
+   "fieldname": "enquiry_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Enquiry Date",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.medical_condition",
+   "fieldname": "medical_details",
+   "fieldtype": "Small Text",
+   "label": "Medical Details",
+   "mandatory_depends_on": "eval: doc.medical_condition"
+  },
+  {
+   "fieldname": "primary_email_id",
+   "fieldtype": "Data",
+   "label": "Primary Email ID"
+  },
+  {
+   "fieldname": "section_break_avtq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cpmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.rating",
+   "fieldname": "review",
+   "fieldtype": "Data",
+   "label": "Review"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Student Applicant",
+   "link_fieldname": "custom_student_enquiry"
+  }
+ ],
+ "modified": "2024-03-04 13:11:03.037939",
+ "modified_by": "Administrator",
+ "module": "Discoveri Oaks",
+ "name": "Enquiry",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
